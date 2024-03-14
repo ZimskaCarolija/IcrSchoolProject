@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="stil/glavni.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-sticky fixed-top">
+        <a class="navbar-brand" href="index.html">Zoo</a>
+        <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#Meni"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="Meni">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Zivotninje.html">Životinje</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Karte.html">Karte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Anketa.html">Anketa</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="PrikazAlerta" class="position-fixed" style="z-index: 99;">
+    </div>
+    <div class="container py-5">
+        <div class="embed-responsive  d-flex justify-content-center w-100">
+            <video width="854" height="480" class="embed-responsive-item w-100 " src="Videi/VideoIndex.mp4" frameborder="0" autoplay loop></video>
+        </div>
+        <h1 class="display-6 py-5 text-center">Osetite se bliže prirodi u Beo zoološkom vrtu. Otkrijte neverovatne divlje životinje, naučite kako štitimo njihovu budućnost i podelite neverovatna sećanja na naš svet prirode.</h1>
+    </div>
+    <!--Kratki deo krate parking-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 my-3 ">
+                <div class="row karticaMoja rounded-5">
+                    <div class="col-4"><img class="img-fluid" src="Slike/SatIkon.png"></div>
+                    <div class="col-8 h-100 justify-content-center my-auto">Radno Vreme 8h - 20h</div>
+                </div>
+            </div>
+            <div class="col-md-5 my-3 offset-md-2">
+                <div class="row karticaMoja rounded-5">
+                    <div class="col-4"><img class="img-fluid" src="Slike/autoIkon.png"></div>
+                    <div class="col-8 h-100 justify-content-center my-auto">Besplatan parking</div>
+                </div>
+            </div>
+
+            <div class="col-md-5 my-3 ">
+                <a href="Karte.html">
+                    <div class="row karticaMoja rounded-5">
+                        <div class="col-4"><img class="img-fluid" src="Slike/KartaIkon.png"></div>
+                        <div class="col-8 h-100 justify-content-center my-auto">Naruči Karte</div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-5 my-3 offset-md-2">
+                <a href="https://goo.gl/maps/CaMT5jKJVf4szcbX8">
+                    <div class="row karticaMoja rounded-5">
+                        <div class="col-4"><img class="img-fluid" src="Slike/MapaIkon.png"></div>
+                        <div class="col-8 h-100 justify-content-center my-auto">Nadnji nas na mapi</div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!--Zivotinje-->
+    <div class="container py-4">
+        <h1>Životinje</h1>
+        <div class="row">
+            <div class="col-6"><img src="Slike/GOlubi.jpg" class="rounded"></div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col"><img src="Slike/Tigar.jpg"></div>
+                </div>
+                <div class="row h-50 my-3">
+
+
+                    <a href="Zivotninje.html" class="rounded Vidi_Jos d-flex">
+                        <h1 class="my-auto text-center"> Vidi Još ...</h1>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Iskustva-->
+    <div class="container py-4">
+        <h1>Šta drugi kažu o nama</h1>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 py-2">
+                <div class="card KartaIskustvo rounded">
+                    <div class="card-body">
+                        Apsolutno neverovatan zoološki vrt i moj omiljeni u Srbiji! Najviše sam posetio jer sam želeo da vidim lenjivca i nisam bio razočaran. Mogao si da dobiješ tako dobar pogled i bio si jako blizu! Zoo vrt je prilično velik i ima toliko mnogo životinja! Mnogo
+                        sam se zabavio i definitivno ću se vratiti. Restoran tamo je jako lep i nudi neverovatnu hranu po pristojnim cenama.
+                    </div>
+                    <div class="card-footer">
+                        -- Pera Perić
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 py-2">
+                <div class="card KartaIskustvo rounded">
+                    <div class="card-body">
+                        Uvek uživam u svojim posetama Beo Zoo-u. Nikada neću uzimati zdravo za gotovo koliko sam srećan što imam ovu predivnu kolekciju nekih od najdivnijih vrsta životinja na svetu, na samo vožnju metroom i autobusom od moje kuće.
+                    </div>
+                    <div class="card-footer">
+                        -- Miša Mišić
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 py-2">
+                <div class="card KartaIskustvo rounded">
+                    <div class="card-body">
+                        Za zoološki vrt, ova atrakcija je tako dobro organizovana i prilagođena deci. Ceo dan od 8:00 do 20:00 ovde nije bio dovoljan da se vidi sve izložbe sa dovoljno vremena da se u potpunosti uživa u različitim ličnostima životinja u njihovim veličanstvenim
+                        ograđenim prostorima.
+                    </div>
+                    <div class="card-footer">
+                        -- Marija Marijić
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 py-2">
+                <div class="card KartaIskustvo rounded">
+
+                    <a href="Anketa.html" class="rounded Vidi_Jos d-flex h-100">
+                        <h1 class="my-auto text-center p-4"> Kakvo je tvoje iskustvo bilo ...</h1>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Vesti-->
+    <div class="container py-4">
+        <h1>
+            Vesti
+        </h1>
+        <div class="row">
+            <div class="col-12 my-2">
+                <div class="card KartaIskustvo rounded d-flex flex-row-reverse">
+                    <div class="card-body text-center d-flex">
+                        <h2 class="justify-content-center my-auto">
+                            Ogledneo si ? Imamo rešenje za tebe - naš novi restoran
+                        </h2>
+                    </div>
+                    <div class="card-img" style="max-width: 40%;">
+                        <img src="Slike/hrana.jpg" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-2">
+                <div class="card">
+                    <div class="card KartaIskustvo py-4">
+                        <div class="card-body text-center d-flex">
+                            <h2 class="justify-content-center my-auto">
+                                Ulaz za decu do 5 godina Besplatan!!!
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 my-2">
+                <div class="card KartaIskustvo rounded">
+
+
+                    <div class="my-auto text-center p-4">Pretplatni se na naše vesti<br>
+                        <div class="d-flex flex-row">
+                            <input type="mail" class="form-control" placeholder="E-mail"><button class="btn btn-dark" id="Mail">Pretplati se</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Galerija-->
+    <div class="container my-5 py-4">
+        <h1>Galerija</h1>
+        <div class="carousel slide" id="Galerija">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Slike/SLikaGalerija1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="Slike/SLikaGalerija3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="Slike/SLikaGalerija4.jpg" class="d-block w-100">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Galerija" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span> 
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Galerija" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+        </div>
+        <a href="Galerija.html">
+            <h1 class="text-end">Vidi još...</h1>
+        </a>
+    </div>
+
+    <div class="container-fluid futer position-absolute absolute-bottom">
+        <h1 style=" padding-top: 150px; ">Beo Zooloski</h1>
+        <ul>
+            <li>
+                <a href="https://goo.gl/maps/CaMT5jKJVf4szcbX8 ">Nadji nas</a>
+            </li>
+            <li>
+                <a href="Zivotninje.html ">Životinje</a>
+            </li>
+            <li>
+                <a href="Galerija.html ">Galerija</a>
+            </li>
+            <li>
+                <a href="Kontakt.html">Kontakt</a>
+            </li>
+            <li>
+                <a href="Karte.html ">Karte</a>
+            </li>
+            <li>
+                <a href="Anketa.html ">Anketa</a>
+            </li>
+            <li>
+                <a href="index.html ">Početna</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#Mail").click(function() {
+                $(".NaciPOridzbine").css("display", "none");
+                ukupno = 0;
+                $("#PrikazAlerta").html(" <div class='alert alert-success alert-dismissible fade show position-fixed w-100' role='alert'>" +
+                    "Uspešno ste se pretplatili" +
+                    "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" +
+                    "</div>");
+            });
+        });
+    </script>
+</body>
+
+</html>

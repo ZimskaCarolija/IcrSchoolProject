@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="stil/glavni.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-sticky fixed-top">
+        <a class="navbar-brand" href="index.html">Zoo</a>
+        <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#Meni"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="Meni">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Zivotninje.html">Životinje</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Karte.html">Karte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Anketa.html">Anketa</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div id="PrikazAlerta" class="position-fixed">
+
+    </div>
+    <!--BOdi glavno telo sajta-->
+    <div class="container py-4" style="min-height:100vh;">
+        <h1>Kontakt</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="py-3">E-mail : BeoZooloski@zoo.com</h2>
+                <h2 class="py-3">Telefon : 064 98 171 454</h2>
+                <div class="form-group">
+                    <label for="Poruka">Poruka :</label>
+                    <textarea class="form-control" rows="5" id="Poruka"></textarea>
+                </div>
+                <button class="Dugme btn my-4" id="Posalji">Pošalji poruku</button>
+            </div>
+            <div class="col-md-6">
+                <h2>Naša lokacija</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2829.8225647742242!2d20.4521354!3d44.8251793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65363cedbc45%3A0x5e309d5a57114a1a!2z0JHQtdC-0LPRgNCw0LTRgdC60Lgg0LfQvtC-0LvQvtGI0LrQuCDQstGA0YI!5e0!3m2!1ssr!2srs!4v1682264453503!5m2!1ssr!2srs"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid futer position-absolute absolute-bottom">
+        <h1 style=" padding-top: 150px; ">Beo Zooloski</h1>
+        <ul>
+            <li>
+                <a href="https://goo.gl/maps/CaMT5jKJVf4szcbX8 ">Nadji nas</a>
+            </li>
+            <li>
+                <a href="Zivotninje.html ">Životinje</a>
+            </li>
+            <li>
+                <a href="Galerija.html ">Galerija</a>
+            </li>
+            <li>
+                <a href="Kontakt.html">Kontakt</a>
+            </li>
+            <li>
+                <a href="Karte.html ">Karte</a>
+            </li>
+            <li>
+                <a href="Anketa.html ">Anketa</a>
+            </li>
+            <li>
+                <a href="index.html ">Početna</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#Posalji").click(function() {
+                $(".NaciPOridzbine").css("display", "none");
+                ukupno = 0;
+                $("#PrikazAlerta").html(" <div class='alert alert-success alert-dismissible fade show position-fixed w-100' role='alert'>" +
+                    "Poruka uspesno poslata" +
+                    "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>" +
+                    "</div>");
+            });
+        });
+    </script>
+</body>
+
+</html>

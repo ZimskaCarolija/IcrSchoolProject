@@ -1,0 +1,98 @@
+@import "teme";
+body {
+    background-color: map-get($BojaNazad1, $TEMA);
+    font-family: $Font3;
+}
+
+.karticaMoja {
+    @extend .BazicnaKLasa;
+    font-size: $VelicinaPOdNaslov;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
+.Vidi_Jos {
+    transition: 1s;
+    @extend .BazicnaKLasa;
+}
+
+.Vidi_Jos:hover {
+    transition: 1s;
+    opacity: 0.8;
+    background-color: map-get($BojaNazad1, $TEMA);
+}
+
+h1 {
+    //zbof Vidi jos hovera da bi bilo finiji prelaz
+    transition: 0.5s;
+}
+
+.Vidi_Jos:hover h1 {
+    transition: 0.5s;
+    font-size: $VelicinaPOdNaslov*1.2;
+}
+
+.karticaMoja:hover {
+    opacity: 0.8;
+    color: map-get($BojaHoverTekst, $TEMA);
+}
+
+a {
+    text-decoration: none;
+    color: map-get($BojaNapred2, $TEMA);
+}
+
+.KartaIskustvo {
+    @extend .BazicnaKLasa;
+    border: none;
+    height: 100%
+}
+
+.KartaIskustvo .card-footer {
+    font-size: $VelicinaPOdNaslov;
+    border: none;
+    @extend .BazicnaKLasa;
+}
+
+.AnketaLink {
+    @extend .BazicnaKLasa;
+    padding: 15px;
+    font-size: $VelicinaPOdNaslov;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: map-get($BojaNazad2, $TEMA);
+}
+
+.Dugme {
+    @extend .BazicnaKLasa;
+}
+
+.SlikaGalerije {
+    padding: 20px;
+    transition: 0.2s;
+}
+
+.SlikaGalerije:hover {
+    transform: rotateZ( 15deg) scale(0.8);
+    transition: 0.2s;
+}
+
+.box {
+    // da bi kod galerije bilo praznog mesto iznedju kolona
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+.Zvezda {
+    width: 30px;
+}
+
+.Zvezda img {
+    width: 30px;
+}

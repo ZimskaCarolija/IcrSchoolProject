@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+.BazicnaKLasa, .Dugme, .AnketaLink, .KartaIskustvo .card-footer, .KartaIskustvo, .Vidi_Jos, .karticaMoja, .futer, .nav-link,
+.navbar-brand {
+  background-color: #3C486B;
+  color: #F45050;
+}
+
+nav {
+  background-color: #3C486B;
+}
+
+.nav-link,
+.navbar-brand {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+}
+
+.nav-link:hover {
+  color: #e9d8a6;
+}
+
+h1 {
+  color: #F45050;
+}
+
+.futer {
+  border: 0px solid transparent;
+  border-radius: 45% 45% 0 0;
+  width: 100%;
+  min-height: 30vh;
+}
+
+h2 {
+  font-size: 28px;
+  color: #F45050;
+}
+
+.Telo {
+  min-height: 800px;
+  height: 800px;
+}
+
+@media (max-width: 720px) {
+  h2 {
+    font-size: 22.4px;
+  }
+}
+body {
+  background-color: #F0F0F0;
+  font-family: "Poppins", sans-serif;
+}
+
+.karticaMoja {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+.Vidi_Jos {
+  transition: 1s;
+}
+
+.Vidi_Jos:hover {
+  transition: 1s;
+  opacity: 0.8;
+  background-color: #F0F0F0;
+}
+
+h1 {
+  transition: 0.5s;
+}
+
+.Vidi_Jos:hover h1 {
+  transition: 0.5s;
+  font-size: 33.6px;
+}
+
+.karticaMoja:hover {
+  opacity: 0.8;
+  color: #e9d8a6;
+}
+
+a {
+  text-decoration: none;
+  color: #F45050;
+}
+
+.KartaIskustvo {
+  border: none;
+  height: 100%;
+}
+
+.KartaIskustvo .card-footer {
+  font-size: 28px;
+  border: none;
+}
+
+.AnketaLink {
+  padding: 15px;
+  font-size: 28px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #3C486B;
+}
+
+.SlikaGalerije {
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.SlikaGalerije:hover {
+  transform: rotateZ(15deg) scale(0.8);
+  transition: 0.2s;
+}
+
+.box {
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.Zvezda {
+  width: 30px;
+}
+
+.Zvezda img {
+  width: 30px;
+}/*# sourceMappingURL=glavni.css.map */

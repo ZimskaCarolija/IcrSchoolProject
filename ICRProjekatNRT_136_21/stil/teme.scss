@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); //LAto
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Raleway:wght@100&display=swap'); //google font MULISH
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap'); //POppins
+$BojaNazad1: (tema1: #FFF9DE,
+tema2:#F0F0F0,
+tema3:#F3E99F);
+$BojaNazad2: (tema1: #FFD3B0,
+tema2:#3C486B,
+tema3:#98D8AA);
+$BojaNapred1: (tema1: #FF6969,
+tema2:#F9D949,
+tema3:#F7D060);
+$BojaNapred2: (tema1: #A6D0DD,
+tema2:#F45050,
+tema3:#FF6D60);
+$BojaHoverTekst: (tema1: #ffcad4,
+tema2:#e9d8a6,
+tema3:#ee9b00); //za hover tekst
+$TEMA:"tema2";
+$VelicinaNaslova:42px;
+$VelicinaPOdNaslov:28px;
+$VelicinaTeksta:20px;
+$Font1:'Lato',
+sans-serif;
+$Font2:'Mulish',
+sans-serif;
+$Font3:'Poppins',
+sans-serif;
+.BazicnaKLasa {
+    background-color: map-get($BojaNazad2, $TEMA);
+    color: map-get($BojaNapred2, $TEMA);
+}
+
+nav {
+    background-color: map-get($BojaNazad2, $TEMA);
+}
+
+.nav-link,
+.navbar-brand {
+    @extend .BazicnaKLasa;
+    font-size: $VelicinaPOdNaslov;
+    font-family: $Font3;
+    padding-left: 20px;
+}
+
+.nav-link:hover {
+    color: map-get($BojaHoverTekst, $TEMA);
+}
+
+h1 {
+    color: map-get($BojaNapred2, $TEMA);
+}
+
+.futer {
+    @extend .BazicnaKLasa;
+    border: 0px solid transparent;
+    border-radius: 45% 45% 0 0;
+    width: 100%;
+    min-height: 30vh;
+}
+
+h2 {
+    font-size: $VelicinaPOdNaslov;
+    color: map-get($BojaNapred2, $TEMA);
+}
+
+.Telo {
+    min-height: 800px;
+    height: 800px;
+}
+
+@media (max-width: 720px) {
+    h2 {
+        font-size: $VelicinaPOdNaslov/1.25;
+    }
+}

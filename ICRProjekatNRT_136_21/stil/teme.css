@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&display=swap");
+.BazicnaKLasa, .futer, .nav-link,
+.navbar-brand {
+  background-color: #3C486B;
+  color: #F45050;
+}
+
+nav {
+  background-color: #3C486B;
+}
+
+.nav-link,
+.navbar-brand {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 20px;
+}
+
+.nav-link:hover {
+  color: #e9d8a6;
+}
+
+h1 {
+  color: #F45050;
+}
+
+.futer {
+  border: 0px solid transparent;
+  border-radius: 45% 45% 0 0;
+  width: 100%;
+  min-height: 30vh;
+}
+
+h2 {
+  font-size: 28px;
+  color: #F45050;
+}
+
+.Telo {
+  min-height: 800px;
+  height: 800px;
+}
+
+@media (max-width: 720px) {
+  h2 {
+    font-size: 22.4px;
+  }
+}/*# sourceMappingURL=teme.css.map */
